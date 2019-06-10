@@ -12,9 +12,8 @@ song_meta <- read_csv("birdsong_metadata.csv")
 # Choose file_id
 ex_id <- song_meta %>%
   filter(genus == "Picus") %>% ## European Green Woodpecker
-  slice(1) %>%
-  select(file_id) %>%
-  pull()
+  slice(1) %>% ## Get first row
+  pull(file_id) ## Pull out file_id, store in ex_id
 
 # Choose example file:
 fname_base <- paste0("songs/xc",ex_id)
