@@ -9,7 +9,6 @@ library(keras)
 library(auk)
 auk_set_ebd_path("ebd/")
 
-  
 # rebird: eBird API wrapper (limited to recent data)
 # https://github.com/ropensci/rebird
 library(rebird)
