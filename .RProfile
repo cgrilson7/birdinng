@@ -7,8 +7,9 @@ library(keras)
 
 # auk: eBird API for the eBird Basic Dataset (EBD)
 library(auk)
-# auk_set_ebd_path("ebd/")
+auk_set_ebd_path("ebd/")
 
+  
 # rebird: eBird API wrapper (limited to recent data)
 # https://github.com/ropensci/rebird
 library(rebird)
@@ -17,4 +18,5 @@ library(rebird)
 # https://marce10.github.io/
 library(warbleR)
 
+# tidyverse
 library(tidyverse)
