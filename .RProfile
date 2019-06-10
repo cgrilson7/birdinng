@@ -1,8 +1,20 @@
 cat("Hello, World!")
 cat("Check .RProfile for required libraries (and configurations as appropriate)")
 
+# keras: tools for building neural networks
 library(keras)
 # install_keras(method="virtualenv")
 
+# auk: eBird API for the eBird Basic Dataset (EBD)
 library(auk)
 # auk_set_ebd_path("ebd/")
+
+# rebird: eBird API wrapper (limited to recent data)
+# https://github.com/ropensci/rebird
+library(rebird)
+
+# warbleR: an R package to streamline analysis of animal acoustic signals
+# https://marce10.github.io/
+library(warbleR)
+
+library(tidyverse)
